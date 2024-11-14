@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>uav_cpp</name>
+  <version>0.2.0</version>
+  <description>
+    UAV control package using C and C++:
+    This package is a ROS 2 C/C++ package designed for UAV control and simulation, providing real-time control algorithms and communication interfaces for autonomous UAV operations.
+
+    This package integrates with ROS 2 core components, leveraging `rclcpp` for efficient node-based control of UAV systems. 
+    It also includes utilities for interacting with the PX4 flight stack and MAVSDK, ensuring robust and reliable control for UAV simulations and real-world applications. 
+
+    The package is suitable for use in advanced UAV research, with a focus on performance and scalability in both simulation and hardware environments.
+    The `aruco_tracker` part of this package is a ROS 2 node for detecting and tracking ArUco markers in real-time from image data received over a UDP port. 
+    It processes the images using OpenCV, extracts the coordinates of detected ArUco markers, and publishes the marker poses as ROS messages. 
+    It is designed for applications where marker-based localization and tracking are required, such as robotics navigation and augmented reality.
+  </description>
+  <maintainer email="tgwilliamsc@gmail.com">Thank-God chisom Williams</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  
+  <!--<build_depend>rclcpp</build_depend> -->
+  <!--<build_depend>MAVSDK</build_depend> --> <!-- MAVSDK dependency -->
+
+  <!--<exec_depend>rclcpp</exec_depend> -->
+  <!--<exec_depend>MAVSDK</exec_depend> -->  <!-- MAVSDK dependency -->
+  
+  <!-- Lastly Added is depend block -->
+   <!-- Build and runtime dependencies --> 
+  <depend>rclcpp</depend>
+  <depend>MAVSDK</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>cv_bridge</depend> 
+  <depend>opencv</depend>
+  
+    <!-- Testing dependencies -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

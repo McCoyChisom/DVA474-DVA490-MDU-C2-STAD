@@ -1,0 +1,5 @@
+aruco_tracker_node:
+  ros__parameters:
+    aruco_id: 0          # Replace with the ID of your target marker
+    marker_size: 0.4     # Marker size in meters
+

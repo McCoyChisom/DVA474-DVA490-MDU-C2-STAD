@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>uav_py</name>
+  <version>0.0.0</version>
+  <description>
+  This package provides a set of Python-based utilities and modules for simulating and controlling UAVs within a ROS2  environment. 
+  It includes components for UAV vision processing, environment simulation, video streaming, and tracking using ArUco   markers. 
+  This package is designed to work seamlessly with Gazebo for UAV simulation and is integrated with PX4 for UAV control. 
+  It is intended for research and development of autonomous aerial vehicles with a focus on real-time applications and computer vision techniques.
+ </description>
+  <maintainer email="tgwilliamsc@gmail.com">Thank-God chisom Williams</maintainer>
+  <license>MIT</license>
+
+  <depend>rclpy</depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

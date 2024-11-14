@@ -1,0 +1,11 @@
+# Ignore build directories
+build/
+install/
+log/
+
+# Ignore temporary and backup files
+*.odt
+*~
+.*.swp
+.*.bak
+

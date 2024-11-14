@@ -1,0 +1,2 @@
+[console_scripts]
+vision_node = uav_py.vision_node:main
