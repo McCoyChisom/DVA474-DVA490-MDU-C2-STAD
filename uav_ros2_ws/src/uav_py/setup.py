@@ -17,7 +17,7 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='chisom',
+    maintainer='Thank-God Chisom Williams',
     maintainer_email='tgwilliamsc@gmail.com',
     description='This package is designed to support UAV-related operations within ROS 2 environment. It includes functionalities for computer vision processing, UAV tracking, and other related tasks. The package provides ROS 2 nodes, such as vision_node, which is intended to handle vision-based algorithms, including object detection and image streaming.',
     license='MIT',
